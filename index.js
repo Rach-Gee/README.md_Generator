@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const markdown = require('./utils/generateMarkdown.js');
 
 
 
@@ -15,8 +15,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: "What is the name of your GitHub repo?",
-        name: 'repo',
+        message: "What is your email address?",
+        name: 'email',
     },
     {
         type: 'input',
@@ -56,7 +56,7 @@ const questions = [
     {
         type: 'list',
         message: "Choose a license for your project.",
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        choices: ['GNU_AGPLv3', 'GNU_GPLv3', 'GNU_LGPLv3', 'Mozilla_Public License 2.0', 'Apache License 2.0', 'MIT_License', 'Boost_Software_License 1.0', 'The_Unlicense'],
         name: 'license'
     }];
 
@@ -74,8 +74,9 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((response) => {
+        let readmeContent = markdown.generateMarkdown(response)
     console.log(response);
-    writeToFile('README.md',response)
+    writeToFile('README.md', readmeContent)
     }
 )}
 
