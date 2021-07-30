@@ -1,11 +1,11 @@
 
-![GNU_GPLv3](https://img.shields.io/badge/GNU_GPLv3-License-green)
+![MIT_License](https://img.shields.io/badge/MIT_License-License-green)
   
-# ReadMe
+# README.md_Generator
 
 ## Overview
         
-doing a read me
+I created this repo for ease of generating README.md files. In seconds you will have a clean, well formatted README.MD. With a responsive index, badge licence and contact me sections. Never create a read me from scratch again!
 
 1. [Installation](#Installation)
 
@@ -21,26 +21,28 @@ doing a read me
         
 ## Installation
        
-do some stuff
+To generate your own README, first run npm install in order to install the following npm package dependencies as specified in the package.json: inquirer that will prompt you for your inputs from the command line The application itself can be invoked with node index.js.
        
 ## Usage
        
-use it to make a read me duh
+When you run node index.js, the application uses the inquirer package to prompt you in the command line with a series of questions about your GitHub and about your project. Then fs.writeFile is used to generate your project's README.md file. 
+
+https://drive.google.com/file/d/1r826aIXBYxJj3CMOExhMhH6kYJB0W87P/view?usp=sharing
 
 ## License
 
-GNU_GPLv3
+MIT_License
        
 ## Features
        
-you can make a readme through this
+The read me will auto generate a licence badge, along with a link to your git hub and a link to your email for ease of contact. 
         
 ## How to Contribute
         
-if you can think of cool stuff to add to this do a push
+I would love to see additions to my README.md Generator that you feel would save you sometime when created your own README.md. Add a GitHub issue, I will add you as a collaborator if I decide to push your idea. 
         
 ## Tests
-try it for your self 
+Not test file included in this repo
     
 ## Questions
 Rach-Gee
