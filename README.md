@@ -27,6 +27,12 @@ To generate your own README, first run npm install in order to install the follo
        
 When you run node index.js, the application uses the inquirer package to prompt you in the command line with a series of questions about your GitHub and about your project. Then fs.writeFile is used to generate your project's README.md file. 
 
+
+
+https://user-images.githubusercontent.com/83891242/127660845-3e3b326c-31c0-4a34-a3cc-fd6db5e92177.mp4
+
+
+
 https://drive.google.com/file/d/1r826aIXBYxJj3CMOExhMhH6kYJB0W87P/view?usp=sharing
 
 ## License
